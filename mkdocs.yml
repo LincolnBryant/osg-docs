@@ -1,0 +1,30 @@
+site_name: OSG Documentation
+site_url: https://djw8605.github.io/osg-docs/
+repo_url: https://github.com/djw8605/osg-docs/
+theme: readthedocs
+
+extra_css:
+  - css/extra.css
+
+pages:
+- Home: 'index.md'
+- Install Guides:
+  - 'Yum Repos': 'Common/yum.md'
+  - 'CA Certificates': 'Common/ca.md'
+  - 'HTCondor-CE': 'Computing_Element/HTCondor_CE.md'
+  - 'HTTP Cache': 'Frontier_Squid/squid.md'
+  - 'CVMFS': 'Other/cvmfs.md'
+  - 'GSI-enabled SSH': 'Other/gsissh.md'
+  - 'RPM-based Worker Node': 'Other/wn.md'
+  - 'Worker node glexec': 'Other/glexec.md'
+- In-Progress Docs:
+  - 'CA Updater': 'Common/ca_updater.md'
+  - 'Certificate Request Scripts': 'Common/cert_scripts.md'
+  - 'Job Router Recipe': 'Computing_Element/job_router.md'
+  - 'OASIS-based Worker Node': 'Other/wn_oasis.md'
+  - 'GridFTP Server': 'Storage/gridftp.md'
+
+markdown_extensions:
+  - admonition
+  - osg_markdown.colors
+
